@@ -1,0 +1,15 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "To-Do List for Agile Assessment",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
