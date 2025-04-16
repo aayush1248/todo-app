@@ -27,8 +27,10 @@ function deleteTask(id) {
 
 function renderTasks() {
   const taskList = document.getElementById('task-list');
+  const filter = document.getElementById('filter-category').value;
   taskList.innerHTML = '';
-  tasks.forEach(task => {
+  const filteredTasks = filter === 'All' ? tasks : tasks.filter(task => task.category === filter);
+  filteredTasks.forEach(task => {
     const li = document.createElement('li');
     li.className = 'p-2 bg-white rounded flex justify-between';
     li.innerHTML = `${task.title} (${task.category}) <button onclick="deleteTask(${task.id})" class="text-red-500">Delete</button>`;

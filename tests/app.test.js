@@ -7,3 +7,11 @@ test('should create a task with title and category', () => {
   expect(task.id).toBeDefined();
   expect(task.completed).toBe(false);
 });
+
+test('should create a task with different category', () => {
+  const task = createTask('Buy groceries', 'Personal');
+  expect(task.title).toBe('Buy groceries');
+  expect(task.category).toBe('Personal');
+  expect(task.id).toBeDefined();
+  expect(task.completed).toBe(false);
+});

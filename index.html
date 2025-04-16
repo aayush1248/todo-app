@@ -17,6 +17,14 @@
       </select>
       <button onclick="addTask()" class="bg-blue-500 text-white p-2 rounded">Add Task</button>
     </div>
+    <div class="mb-4">
+      <label>Filter by Category: </label>
+      <select id="filter-category" onchange="renderTasks()" class="p-2 border rounded">
+        <option value="All">All</option>
+        <option>Work</option>
+        <option>Personal</option>
+      </select>
+    </div>
     <ul id="task-list" class="space-y-2"></ul>
   </div>
   <script src="app.js"></script>
