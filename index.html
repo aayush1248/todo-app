@@ -15,6 +15,7 @@
         <option>Work</option>
         <option>Personal</option>
       </select>
+      <input id="due-date" type="datetime-local" class="p-2 border rounded">
       <button onclick="addTask()" class="bg-blue-500 text-white p-2 rounded">Add Task</button>
     </div>
     <div class="mb-4">
@@ -24,6 +25,9 @@
         <option>Work</option>
         <option>Personal</option>
       </select>
+    </div>
+    <div class="mb-4">
+      <p>Progress: <span id="progress">0% (0/0)</span></p>
     </div>
     <ul id="task-list" class="space-y-2"></ul>
   </div>
